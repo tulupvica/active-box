@@ -1,0 +1,21 @@
+@mixin btn($f-size, $padding) {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  transition: $transition;
+  background: $main-color;
+  font-size: $f-size;
+  padding: $padding;
+  &:hover {
+    background: $btn-hover;
+  }
+}
+
+@mixin features__icon($bg, $width, $height) {
+  background: $bg;
+  background-size: cover;
+  width: $width;
+  height: $height;
+  margin: 0 auto 30px;
+}
+

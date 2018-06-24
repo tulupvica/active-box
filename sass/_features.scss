@@ -1,0 +1,57 @@
+.features__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .features__item {
+    text-align: center;
+    width: 31%;
+    padding: 20px 0;
+    margin: 0 1%;
+
+    @media (max-width:668px) {
+      width: 47%;
+    }
+
+    @media (max-width:415px) {
+      width: 100%;
+    }
+  }
+
+  .icon-pen {
+    @include features__icon(url("../img/pen.png") no-repeat, 60px, 60px);
+  }
+
+  .icon-computer {
+    @include features__icon(url("../img/computer.png") no-repeat, 75px, 60px);
+  }
+
+  .icon-lamp {
+    @include features__icon(url("../img/lamp.png") no-repeat, 41px, 60px);
+  }
+
+  .icon-atom {
+    @include features__icon(url("../img/atom.png") no-repeat, 56px, 60px);
+  }
+
+  .icon-case {
+    @include features__icon(url("../img/case.png") no-repeat, 72px, 60px);
+  }
+
+  .icon-cloud {
+    @include features__icon(url("../img/cloud.png") no-repeat, 79px, 60px);
+  }
+
+  .features__title {
+    color: $title-color;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    font-weight: 700;
+  }
+
+  .features__description {
+    color: $main-font-color;
+    line-height: 21px;
+  }
+}
+

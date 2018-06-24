@@ -1,0 +1,14 @@
+.header-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+.header-wrap .header {
+  max-width: 1170px;
+  padding: 40px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

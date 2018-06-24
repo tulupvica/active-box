@@ -1,0 +1,118 @@
+.home {
+  background: url("../img/home-bg.jpg") center no-repeat;
+  background-size: cover;
+  max-width: 1900px;
+  min-height: 760px;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  &:before {
+    content: '';
+    position: absolute;
+    background: transparentize($main-bg-color, 0.05);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  @media (max-width: 769px) {
+    min-height: 680px;
+  }
+
+  .home-inner {
+    @extend .wrapper;
+    padding: 0 10px;
+  }
+
+  .offer {
+    position: relative;
+    max-width: 915px;
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+
+    @media (max-width: 991px) {
+      max-width: 776px;
+    }
+
+    @media (max-width: 769px) {
+      padding-top: 0;
+    }
+
+    .offer__title {
+      font-size: $main-font-size + 51;
+      line-height: 71px;
+      font-weight: 700;
+      margin-bottom: 30px;
+
+      @media (max-width: 991px) {
+        font-size: $main-font-size + 44;
+      }
+
+      @media (max-width: 769px) {
+        font-size: $main-font-size + 32;
+        line-height: 60px;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: $main-font-size + 26;
+        line-height: 48px;
+        margin-bottom: 16px;
+      }
+
+      @media (max-width: 320px) {
+        font-size: $main-font-size + 18;
+        line-height: 40px;
+      }
+
+    }
+
+    .offer__subtitle {
+      display: block;
+      font-size: $main-font-size + 8;
+
+      @media (max-width: 991px) {
+        font-size: $main-font-size + 4;
+      }
+
+      @media (max-width: 769px) {
+        line-height: 28px;
+        margin-bottom: 60px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: $main-font-size + 2;
+        line-height: 24px;
+        margin-bottom: 40px;
+      }
+
+      @media (max-width: 320px) {
+        font-size: $main-font-size ;
+        line-height: 20px;
+        margin-bottom: 30px;
+      }
+
+      line-height: 33px;
+      margin-bottom: 76px;
+    }
+
+    .offer__btn {
+      @include btn($main-font-size - 1, 20px 47px);
+
+
+      @media (max-width: 769px) {
+        @include btn($main-font-size - 1, 15px 40px);
+      }
+
+      @media (max-width: 480px) {
+        @include btn($main-font-size - 1, 14px 36px);
+      }
+    }
+
+  }
+
+}
+

@@ -1,0 +1,114 @@
+.testimonials-wrapper {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  background: #53354a;
+
+  @media (max-width: 769px){
+      flex-direction: column;
+  }
+
+  .tectimotial__img-slider {
+    width: 50%;
+    &:focus {outline: none;}
+  }
+
+  .tectimotial__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .testimonials__comment-slider {
+    background: #53354a;
+    width: 50%;
+    &:focus {outline: none;}
+  }
+
+  .testimonials__coment-slide {
+    padding: 0 68px;
+    color: #fff;
+  }
+
+  .testimonials__coment {
+    font-family: $secondary-font;
+    font-size: $main-font-size *2 ;
+    font-style: italic;
+    line-height: 36px;
+    margin-bottom: 14px;
+  }
+
+  .testimonials__author {
+    font-size: $main-font-size;
+    font-weight: 300;
+    line-height: 21px;
+  }
+
+  .slick-dots {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .slick-slide:focus {
+    outline: none;
+  }
+
+  .slick-dots li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+  }
+
+  .slick-dots li.slick-active button {
+    background-color: #fff;
+  }
+
+  .slick-dots li button {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(225, 225, 225, 0.4);
+    border-radius: 50%;
+    text-indent: -999px;
+    overflow: hidden;
+  }
+  
+
+  @media (max-width: 1025px){
+    .testimonials__coment {
+      font-size: $main-font-size + 10;
+      line-height: 36px;
+    }
+
+    .testimonials__author {
+      font-size: $main-font-size - 1;
+    }
+
+  }
+  @media (max-width: 813px){
+    .testimonials__coment {
+      font-size: $main-font-size + 4;
+      line-height: 26px;
+      margin-bottom: 8px;
+    }
+
+    .testimonials__author {
+      font-size: $main-font-size - 3;
+    }
+
+  }
+  @media (max-width: 769px){
+    .tectimotial__img-slider {
+      width: 100%;
+    }
+    .testimonials__comment-slider {
+      width: 100%;
+      padding: 30px 10px;
+    }
+
+    .testimonials__coment-slide {
+      padding: 0;
+    }
+
+  }
+
+}
